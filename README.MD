@@ -31,8 +31,7 @@ Powered by a modular AI architecture:
 HiMeal_a-voice-assist/
 │
 ├── frontend/              # Streamlit web UI
-│   ├── app.py
-│   └── requirements.txt
+│   └── app.py
 │
 ├── backend/               # FastAPI + Haystack logic
 │   ├── main.py
@@ -42,6 +41,7 @@ HiMeal_a-voice-assist/
 │
 ├── LICENSE                # Apache License 2.0
 ├── requirements.txt
+├── .env
 └── README.md
 ```
 
@@ -52,7 +52,7 @@ HiMeal_a-voice-assist/
 ### 1️⃣ Clone the Repo
 
 ```bash
-git clone https://github.com/<yourname>/HiMeal_a-voice-assist.git
+git clone https://github.com/wahahaha-hub/HiMeal_a-voice-assist.git
 cd HiMeal_a-voice-assist
 ```
 
@@ -63,7 +63,7 @@ cd frontend
 pip install -r requirements.txt
 ```
 
-Create `.env` in `frontend/`:
+Create `.env` in root directory with:
 
 ```env
 API_BASE=http://localhost:8000
@@ -91,7 +91,7 @@ Visit 👉 http://localhost:8501
 
 | Feature | Status |
 |--------|:-----:|
-| Text-based chat | ✅ |
+| Text-based chat | 🚧 |
 | FastAPI backend | 🚧 |
 | Whisper STT voice input | 🔜 |
 | TTS voice response | 🔜 |
