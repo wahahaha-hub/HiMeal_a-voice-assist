@@ -3,7 +3,7 @@
 **HiMeal** comes from the classic Chinese greeting **“您吃了吗？”**, meaning *“Have you eaten?”*.  
 A friendly, caring question — and the core spirit of this assistant.
 
-HiMeal is a voice-first conversational assistant focused on food, nutrition, and meal suggestions.  
+HiMeal is a voice-first conversational assistant focused on everything you want to ask.  
 Powered by a modular AI architecture:
 
 - Streamlit frontend UI
@@ -14,14 +14,14 @@ Powered by a modular AI architecture:
 
 ## ✨ Features
 
-- Natural discussion about meals & health
+- Natural discussion and daily advises
 - Modular design for fast feature expansion
 - Session-based conversation
 - Future upgrades:
   - 🎤 Speech-to-text input (Whisper)
   - 🔊 TTS voice responses
   - ⚡ WebSocket streaming
-  - 👤 Personalized diet preferences
+  - 👤 Personalized context and know-your-habit
 
 ---
 
@@ -49,6 +49,7 @@ HiMeal_a-voice-assist/
 
 ## 🚀 Quick Start
 
+
 ### 1️⃣ Clone the Repo
 
 ```bash
@@ -56,20 +57,16 @@ git clone https://github.com/wahahaha-hub/HiMeal_a-voice-assist.git
 cd HiMeal_a-voice-assist
 ```
 
-### 2️⃣ Install Frontend
-
+### 2️⃣ Install Packages
+**recommended python version: 3.11**
 ```bash
-cd frontend
 pip install -r requirements.txt
 ```
 
-Create `.env` in root directory with:
 
-```env
-API_BASE=http://localhost:8000
-```
 
-### 3️⃣ Run Backend (placeholder for now)
+
+### 3️⃣ Run Backend
 
 ```bash
 cd backend
@@ -96,15 +93,15 @@ Visit 👉 http://localhost:8501
 | Whisper STT voice input | 🔜 |
 | TTS voice response | 🔜 |
 | Streaming responses | 🔜 |
-| Nutrition RAG knowledge base | 🔜 |
-| Personal food preference profile | 🔜 |
+| RAG knowledge base | 🔜 |
+| Personal context memory | 🔜 |
 
 ---
 
 ## 🤝 Contributing
 
 Issues and PRs are welcome —  
-Let’s make HiMeal smarter and tastier together! 🍽️
+Let’s make HiMeal smarter and more usable together! 🍽️
 
 ---
 

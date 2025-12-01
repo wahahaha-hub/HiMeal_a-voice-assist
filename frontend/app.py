@@ -1,12 +1,20 @@
+import os
 import streamlit as st
 import requests
 import base64
 import json
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 # -----------------------------
 # Config
 # -----------------------------
-BACKEND_URL = "http://localhost:8000/api/voice"  # Update when deployed
+BACKEND_HOST = os.getenv("BACKEND_HOST")
+BACKEND_PORT = os.getenv("BACKEND_PORT")
+BACKEND_REPLY_URL = os.getenv("BACKEND_REPLY_URL")
+BACKEND_URL = f"http://{BACKEND_HOST}:{BACKEND_PORT}{BACKEND_REPLY_URL}"  # Update when deployed
 
 st.set_page_config(
     page_title="HiMeal | Voice Assistant",
