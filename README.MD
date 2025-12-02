@@ -35,9 +35,12 @@ HiMeal_a-voice-assist/
 │
 ├── backend/               # FastAPI + Haystack logic
 │   ├── main.py
-│   ├── pipelines/
+│   ├── component/
+│   ├── data/
 │   ├── models/
-│   └── data/
+│   ├── router/
+│   ├── service/
+│   └── util/
 │
 ├── LICENSE                # Apache License 2.0
 ├── requirements.txt
