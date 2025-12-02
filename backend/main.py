@@ -1,6 +1,8 @@
 import os
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from dotenv import load_dotenv
+
+from pipelines.simple_answer import generate_answer
 
 
 load_dotenv()
@@ -15,12 +17,14 @@ app = FastAPI()
 
 
 @app.get("/")
-def read_root():
+async def read_root():
     return {"Hello": "World"}
 
-@app.get(BACKEND_REPLY_URL)
-def reply():
-    return {"message": "Hello, have you eaten?"}
+@app.post(BACKEND_REPLY_URL)
+async def reply(request: Request):
+    data = await request.json()
+    reply = await generate_answer(data['query'])
+    return {"message": reply}
 
 
 if __name__ == "__main__":
