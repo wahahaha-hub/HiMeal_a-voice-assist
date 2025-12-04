@@ -91,9 +91,9 @@ Visit 👉 http://localhost:8501
 
 | Feature | Status |
 |--------|:-----:|
-| Text-based chat | 🚧 |
-| FastAPI backend | 🚧 |
-| Whisper STT voice input | 🔜 |
+| Text-based chat | ✅ |
+| FastAPI backend | ✅ |
+| Whisper STT voice input | ✅ |
 | TTS voice response | 🔜 |
 | Streaming responses | 🔜 |
 | RAG knowledge base | 🔜 |
