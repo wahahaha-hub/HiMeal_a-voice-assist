@@ -4,3 +4,4 @@ haystack-ai==2.22.0
 dotenv==0.9.9
 fastapi==0.123.0
 uvicorn==0.38.0
+openai-whisper==20250625
