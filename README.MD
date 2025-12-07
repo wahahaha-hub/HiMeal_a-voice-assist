@@ -72,7 +72,7 @@ pip install -r requirements.txt
 
 ```bash
 cd backend
-uvicorn main:app --reload --port 8000
+python main.py
 ```
 
 ### 4️⃣ Launch Frontend
