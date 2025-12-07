@@ -6,9 +6,9 @@ A friendly, caring question — and the core spirit of this assistant.
 HiMeal is a voice-first conversational assistant focused on everything you want to ask.  
 Powered by a modular AI architecture:
 
-- Streamlit frontend UI
+- tailwind frontend UI
 - FastAPI + Haystack backend
-- Extendable RAG knowledge base
+- local Whisper STT
 
 ---
 
@@ -30,8 +30,8 @@ Powered by a modular AI architecture:
 ```
 HiMeal_a-voice-assist/
 │
-├── frontend/              # Streamlit web UI
-│   └── app.py
+├── frontend/              # html web UI
+│   └── chat.html
 │
 ├── backend/               # FastAPI + Haystack logic
 │   ├── main.py
@@ -45,6 +45,7 @@ HiMeal_a-voice-assist/
 ├── LICENSE                # Apache License 2.0
 ├── requirements.txt
 ├── .env
+├── .gitignore
 └── README.md
 ```
 
@@ -67,8 +68,6 @@ pip install -r requirements.txt
 ```
 
 
-
-
 ### 3️⃣ Run Backend
 
 ```bash
@@ -78,12 +77,7 @@ uvicorn main:app --reload --port 8000
 
 ### 4️⃣ Launch Frontend
 
-```bash
-cd frontend
-streamlit run app.py
-```
-
-Visit 👉 http://localhost:8501
+open `frontend/chat.html` in your browser
 
 ---
 
